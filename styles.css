@@ -8,6 +8,12 @@ body{
     color:#212121;
     font-family: 'Nunito Sans', sans-serif;
 }
+.fp-watermark {
+display: none;
+}
+div#preload {
+    display: none;
+}
 header{
 	position:fixed;
 	top:0;
@@ -15,7 +21,7 @@ header{
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr auto;
-	padding: 15px;
+	padding: 30px;
 }
 header a{
 	color:inherit;
@@ -31,18 +37,19 @@ div{
 } 
 aside{
 	position: fixed;
-	transition: left .2s ease;
+	transition: left .1s ease;
 	left:-380px;
 	width:320px;
 	background-color:#212121;
-	padding: 30px 45px;
+	opacity: 95%;
+	padding: 30px 40px;
 	z-index: 10;
 	height:100vh;
 }
 aside.active{
 	left:0;
 }
-aside button.close{
+/*aside button.close{
 	font-size:28px;
 	border:0;
 	background-color: transparent;
@@ -50,6 +57,10 @@ aside button.close{
 	cursor:pointer;
 	padding-bottom: 20px;
 	margin-left: -3px
+}*/
+aside a.close{
+	color: #ffffff !important;
+	cursor:pointer;
 }
 div#fp-nav.fp-left{
 	display: flex;
@@ -70,6 +81,7 @@ a.active span{
 	margin: 2px !important;
 }
 .sidebar{
+	margin-top: 50px;
 	color: white;
 	font-family: 'Nunito Sans', sans-serif;
 }

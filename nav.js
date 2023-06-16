@@ -8,6 +8,6 @@ document.getElementById('menuBtn').onclick = e => {
 	e.preventDefault();
 	openMenu();
 }
-document.querySelector('aside button.close').onclick = e => {
+document.querySelector('aside a.close').onclick = e => {
 	closeMenu()
 }
