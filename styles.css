@@ -2,10 +2,11 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+	scrollbar-width: none !important;
 }
 body{
-    color:#171a20;
-    font-family: 'M PLUS 1', sans-serif;
+    color:#212121;
+    font-family: 'Nunito Sans', sans-serif;
 }
 header{
 	position:fixed;
@@ -30,12 +31,12 @@ div{
 } 
 aside{
 	position: fixed;
-	transition: left .4s ease;
+	transition: left .2s ease;
 	left:-380px;
 	width:320px;
-	background-color:gold;
-	padding: 50px 30px;
-	z-index: 4;
+	background-color:#212121;
+	padding: 30px 45px;
+	z-index: 10;
 	height:100vh;
 }
 aside.active{
@@ -45,10 +46,65 @@ aside button.close{
 	font-size:28px;
 	border:0;
 	background-color: transparent;
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	padding:10px;
+	color: white;
 	cursor:pointer;
-	
+	padding-bottom: 20px;
+	margin-left: -3px
+}
+div#fp-nav.fp-left{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9
+}
+span{  /*this changes the nav stuff*/
+	background: #004343 !important;
+	height:3px !important; 
+	width:3px !important;
+}
+a.active span{
+	height:11px !important; 
+	width:11px !important;
+}
+#fp-nav ul li, .fp-slidesNav ul li{
+	margin: 2px !important;
+}
+.sidebar{
+	color: white;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.sidebar li a{
+	color: inherit;
+	text-decoration: none;
+	list-style-type: none;
+	line-height: 35px;
+	transition: 0.3s;
+	font-weight: 500;
+	font-size: 17px
+}
+.sidebar li a:hover{
+	color:#009494;
+}
+.sidebar li{
+	list-style-type: none;
+	cursor:pointer;
+}
+.sidebar ul{
+	list-style-type: none;
+	padding-left: 15px;
+	display: none;
+	transition: 0.3s;
+}
+
+.sidebar ul.show1.show{
+	display: block !important;
+}
+.sidebar ul.show2.show{
+	display: block !important;
+}
+.sidebar ul.show3.show{
+	display: block !important;
+}
+.sidebar ul.show4.show{
+	display: block !important;
 }

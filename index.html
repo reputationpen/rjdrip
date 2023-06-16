@@ -3,6 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>RJ Drip</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	
 	<meta name="viewport" conent="width=device-width">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="styles.css">
@@ -22,23 +27,41 @@
 			</header>
 	<aside>
 	  <button class="close">&times;</button>
-		<p><a class="dropdown">Standard</a> 
-			Season Shirt Re-Design
-			Crewnecks
-			Hoodies
-			Bomber Jacket
-			Socks
-			Beanies 
-			  <a class="dropdown">10th Anniversary</a> 
-			Shirt
-			Crewnecks
-			Hoodies 
-			<a class="dropdown">RoboJackettes</a> 
-			Shirt
-			Hoodie 
-			<a class="dropdown">Stealth</a> 
-			Crewneck
-			Hoodie</p>
+		<ul class="sidebar">
+			<li>
+				<a href="#" class="button1">Standard</a>
+				<ul class="show1">
+					<li><a href="#">Season Shirt Re-Design</a></li>
+					<li><a href="#">Crewneck</a></li>
+					<li><a href="#">Hoodie</a></li>
+					<li><a href="#">Bomber Jacket</a></li>
+					<li><a href="#">Beanie</a></li>
+					<li><a href="#">Socks</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="button2">10th Anniversary</a>
+				<ul class="show2">
+					<li><a href="#">Shirt</a></li>
+					<li><a href="#">Crewneck</a></li>
+					<li><a href="#">Hoodie</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="button3">RoboJackettes</a>
+				<ul class="show3">
+					<li><a href="#">Shirt</a></li>
+					<li><a href="#">Hoodie</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="button4">Stealth</a>
+				<ul class="show4">
+					<li><a href="#">Crewneck</a></li>
+					<li><a href="#">Hoodie</a></li>
+				</ul>
+			</li>
+		</ul>
 	</aside>
 	<div id="fullpage">
 		<div class="section standard">Season Shirt Re-Design</div>
@@ -57,13 +80,30 @@
 	</div>
 	<script src="nav.js"></script>
 	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	
 	<script>
 		new fullpage('#fullpage', {
-			autoScrolling: true
+			autoScrolling: true,
+			scrollingSpeed: 200,
+			navigation: true,
+			navigationPosition: 'left',
 		})
 	</script>
-	
+	<script>
+		$('.sidebar li a.button1').click(function(){
+			$('.sidebar ul.show1').toggleClass('show');
+		});
+		$('.sidebar li a.button2').click(function(){
+			$('.sidebar ul.show2').toggleClass('show');
+		});
+		$('.sidebar li a.button3').click(function(){
+			$('.sidebar ul.show3').toggleClass('show');
+		});
+		$('.sidebar li a.button4').click(function(){
+			$('.sidebar ul.show4').toggleClass('show');
+		});
+	</script>
 </body>
 </html>
