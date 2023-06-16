@@ -13,7 +13,6 @@ document.addEventListener('scroll', () => {
 			window.scroll(0, sections[destIndex].offsetTop);
 		}
 	}
-	
 	sections.forEach((section,index) => {
 		if (window.pageYOffset === section.offsetTop) {
 			document.lastCentered = index;
@@ -21,10 +20,7 @@ document.addEventListener('scroll', () => {
 				document.onWayTo = null;
 			}
 		}
-		})
-	
-	
-	
+	})
 	
 	document.lastScrollPosition = window.pageYOffset;
 })

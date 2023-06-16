@@ -1,17 +1,22 @@
 *{
 	padding: 0px;
 	margin: 0px;
+	box-sizing: border-box;
 }
 body{
 	color:black;
 	padding: 0px;
 	margin: 0px;
 }
+html{
+	/*scroll-behavior: smooth;*/
+}
 header{
+	position:fixed;
+	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr auto;
-	padding: 5px;
-	z-index: 1;
+	padding: 15px;
 }
 header a{
 	color:inherit;
@@ -24,6 +29,8 @@ section{
 	height:100vh;
 	background-size: cover;
 	background-pos: center center;
+	border-style: inset;
+	padding: 35px 15px;
 } 
 aside{
 	position: fixed;
