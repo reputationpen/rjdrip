@@ -1,58 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<meta name="viewport" conent="width=device-width">
-<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<title>RJ Drip</title>
+	<meta name="viewport" conent="width=device-width">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-		<nav class="topleft">
-			<a href="" id="menuBtn">menu</a>
-			<a>timer</a>
-			<a>items</a>
-		</nav>
-		<nav class="topright">
-			<a>productname</a>
-			<a>-</a>
-			<a>price</a>
-		</nav>
-	</header>
-    <aside>
-		<button class="close">&times;</button>
-		<a class="dropdown">Standard</a> 
-		Season Shirt Re-Design
-		Crewnecks
-		Hoodies
-		Bomber Jacket
-		Socks
-		Beanies 
-		<a class="dropdown">10th Anniversary</a> 
-		Shirt
-		Crewnecks
-		Hoodies 
-		<a class="dropdown">RoboJackettes</a> 
-		Shirt
-		Hoodie 
-		<a class="dropdown">Stealth</a> 
-		Crewneck
-		Hoodie 
+	<header>
+			<nav class="topleft">
+				<a href="" id="menuBtn">menu</a>
+				<a>timer</a>
+				<a>items</a>
+			</nav>
+			<nav class="topright">
+				<a>productname</a>
+				<a>-</a>
+				<a>price</a>
+			</nav>
+			</header>
+	<aside>
+	  <button class="close">&times;</button>
+		<p><a class="dropdown">Standard</a> 
+			Season Shirt Re-Design
+			Crewnecks
+			Hoodies
+			Bomber Jacket
+			Socks
+			Beanies 
+			  <a class="dropdown">10th Anniversary</a> 
+			Shirt
+			Crewnecks
+			Hoodies 
+			<a class="dropdown">RoboJackettes</a> 
+			Shirt
+			Hoodie 
+			<a class="dropdown">Stealth</a> 
+			Crewneck
+			Hoodie</p>
 	</aside>
-	<section>Season Shirt Re-Design</section>
-	<section>Standard Crewnecks</section>
-	<section>Standard Hoodies</section>
-	<section>Bomber Jacket</section>
-	<section>Socks</section>
-	<section>Beanies</section>
-	<section>10 Shirt</section>
-	<section>10 Crewnecks</section>
-	<section>10 Hoodies</section>
-	<section>Goonettes Shirt</section>
-	<section>Goonettes Hoodie</section>
-	<section>Stealth Crewneck</section>
-	<section>Stealth Hoodie</section>
+	<div id="fullpage">
+		<div class="section standard">Season Shirt Re-Design</div>
+		<div class="section standard">Standard Crewnecks</div>
+		<div class="section standard">Standard Hoodies</div>
+		<div class="section standard">Bomber Jacket</div>
+		<div class="section standard">Socks</div>
+		<div class="section standard">Beanies</div>
+		<div class="section 10">10 Shirt</div>
+		<div class="section 10">10 Crewnecks</div>
+		<div class="section 10">10 Hoodies</div>
+		<div class="section goonettes">Goonettes Shirt</div>
+		<div class="section goonettes">Goonettes Hoodie</div>
+		<div class="section stealth">Stealth Crewneck</div>
+		<div class="section stealth">Stealth Hoodie</div>
+	</div>
 	<script src="nav.js"></script>
-
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<script>
+		new fullpage('#fullpage', {
+			autoScrolling: true
+		})
+	</script>
+	
 </body>
 </html>
