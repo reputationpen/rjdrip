@@ -22,6 +22,7 @@ header{
 	display: grid;
 	grid-template-columns: 1fr auto;
 	padding: 30px;
+	color:white;
 }
 header a{
 	color:inherit;
@@ -33,15 +34,15 @@ header nav a{
 div{
 	height:100vh;
 	background-size: cover;
-	background-pos: center center;
-} 
+	background-position: center center;
+}
 aside{
 	position: fixed;
 	transition: left .1s ease;
 	left:-380px;
 	width:320px;
 	background-color:#212121;
-	opacity: 95%;
+	opacity: 90%;
 	padding: 30px 40px;
 	z-index: 10;
 	height:100vh;
