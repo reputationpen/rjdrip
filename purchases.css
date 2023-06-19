@@ -1,0 +1,20 @@
+body{
+	background-color: #212121;
+    color:#ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+	text-align: left;
+}
+nav{
+	padding: 30px 35px;
+}
+nav a{
+	color: #ffffff;
+	text-decoration: none;
+}
+div{
+	padding: 7% 10%;
+	line-height: 30px;
+}
+.sub{
+	list-style-type: lower-alpha
+}
