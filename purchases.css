@@ -18,3 +18,7 @@ div{
 .sub{
 	list-style-type: lower-alpha
 }
+li a{
+	color: #ffffff;
+	text-decoration: underline;
+}
