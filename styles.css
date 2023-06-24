@@ -128,3 +128,6 @@ a.active span{
 .sidebar ul.show4.show{
 	display: block !important;
 }
+#fullpage {
+    transition-delay: 0s !important;
+}
