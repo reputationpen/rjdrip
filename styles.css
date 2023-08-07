@@ -37,6 +37,11 @@ header a{
 header nav a{
 	text-decoration: none;
 	padding: 5px 10px;
+	cursor: default;
+	user-select: none;
+}
+#menuBtn{
+	cursor: pointer;
 }
 div{
 	height:100vh;
@@ -92,6 +97,7 @@ a.active span{
 	margin-top: 50px;
 	color: white;
 	font-family: 'Nunito Sans', sans-serif;
+	user-select: none;
 }
 .sidebar li a{
 	color: inherit;
@@ -100,7 +106,8 @@ a.active span{
 	line-height: 35px;
 	transition: 0.3s;
 	font-weight: 500;
-	font-size: 17px
+	font-size: 17px;
+	user-select: none;
 }
 .sidebar li a:hover{
 	color:#009494;
@@ -130,4 +137,7 @@ a.active span{
 }
 #fullpage {
     transition-delay: 0s !important;
+}
+.close{
+	user-select: none;
 }
